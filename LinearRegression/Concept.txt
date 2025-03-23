@@ -1,0 +1,80 @@
+Linear Regression 
+
+Works on y=wx+b
+
+Multiple Independent features y = b + w1x1 + w2x2 +.....
+
+Find the best-fitting line that minimizes the difference between the predicted values (𝑦^) and the actual values (𝑦).
+
+1.Prediction: For each data point, the model predicts 
+y^=w×x+b.
+
+2.Error Calculation: Compute the error (residual) between the true and predicted values:
+Error=𝑦−𝑦^
+
+3.Loss Function: We use Mean Squared Error (MSE) to measure model performance:
+𝑀𝑆𝐸=1/n∑(𝑦−𝑦^)2
+
+4.Optimization: The model adjusts 
+𝑤 and 𝑏 using Gradient Descent to minimize MSE.
+
+
+5. Assumptions of Linear Regression
+Linearity – The relationship between independent and dependent variables is linear.
+Independence – Data points are independent of each other.
+Homoscedasticity – Constant variance of errors.
+Normality of Residuals – Errors are normally distributed.
+
+6. When to Use Linear Regression
+✅ Predict continuous outcomes (e.g., prices, temperatures).
+✅ Interpret feature importance using the coefficients.
+✅ Fast and efficient on small to medium datasets.
+
+🚫 Not Suitable When:
+
+Relationship is non-linear.
+High-dimensional datasets (suffers from overfitting).
+Data has outliers (sensitive to extreme values).
+
+Easy Understanding - https://www.youtube.com/watch?v=nk2CQITm_eo&utm_source=chatgpt.com
+
+
+Gradient Descent – Fine-Tuning Parameters in Linear Regression
+Gradient Descent is an optimization algorithm used to minimize the error (or loss) by adjusting the model’s parameters (weights 
+𝑤 and bias 𝑏 in linear regression).
+
+1. Why Do We Need Gradient Descent?
+In linear regression, our objective is to find the best 
+𝑤 and 𝑏 values that minimize the Mean Squared Error (MSE):
+
+𝑀𝑆𝐸=1/𝑛∑(𝑦−𝑦^)2
+ 
+Calculating these parameters analytically for small datasets is easy (using the Normal Equation), but for large datasets or complex models, Gradient Descent is faster and more scalable.
+
+Gradient Descent Concept
+
+If the slope is steep → Take a large step.
+If the slope is shallow → Take a small step.
+
+Learning Rate (𝛼)
+Too Small: Convergence is slow.
+Too Large: May overshoot the minimum or diverge.
+✅ Typical range: 
+0.001 to 0.1 (depends on dataset and model).
+
+
+Types of Gradient Descent:
+
+Batch Gradient Descent: Uses the entire dataset to compute the gradient.
+✅ Accurate but slow for large datasets.
+
+Stochastic Gradient Descent (SGD): Uses one sample at a time.
+✅ Faster but noisy updates.
+
+Mini-Batch Gradient Descent: Uses small batches of data.
+✅ Best of both worlds—faster and more stable.
+
+Key Challenges: 
+Local Minima: In linear regression, there’s only one global minimum.
+Vanishing Gradient: If the gradient is too small, updates become slow.
+Choosing the Right Learning Rate: Requires tuning.
