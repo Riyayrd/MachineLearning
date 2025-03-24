@@ -80,3 +80,11 @@ Key Challenges:
 Local Minima: In linear regression, there’s only one global minimum.
 Vanishing Gradient: If the gradient is too small, updates become slow.
 Choosing the Right Learning Rate: Requires tuning.
+
+StandardScaler operates on the principle of normalization, where it transforms the distribution of each feature to have a mean of zero and a standard deviation of one. This process ensures that all features are on the same scale, preventing any single feature from dominating the learning process due to its larger magnitude.
+
+The transformation performed by StandardScaler can be expressed mathematically as:
+
+z=x−μ/σ
+
+StandardScaler helps improve the performance and convergence of machine learning models, particularly those sensitive to feature scales, such as linear regression, logistic regression, and support vector machines.
