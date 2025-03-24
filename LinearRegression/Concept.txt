@@ -74,6 +74,8 @@ Stochastic Gradient Descent (SGD): Uses one sample at a time.
 Mini-Batch Gradient Descent: Uses small batches of data.
 ✅ Best of both worlds—faster and more stable.
 
+In scikit-learn’s LinearRegression model, the default solver does not use Gradient Descent. Instead, it uses the Ordinary Least Squares (OLS) method based on the Normal Equation
+
 Key Challenges: 
 Local Minima: In linear regression, there’s only one global minimum.
 Vanishing Gradient: If the gradient is too small, updates become slow.
