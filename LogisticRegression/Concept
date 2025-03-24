@@ -1,0 +1,23 @@
+Logistic Regression is a statistical method used for binary classification—predicting one of two possible outcomes.
+Despite its name, it's a classification algorithm, not a regression one. The "regression" term refers to its foundation in linear regression principles.
+
+Binary Outcomes: Logistic Regression predicts probabilities for two classes, often labeled as 0 and 1. For example, determining if an email is "Spam" (1) or "Not Spam" (0).​
+
+Sigmoid Function: Unlike linear regression, which predicts continuous values, logistic regression uses the sigmoid function to map any real-valued number into the (0, 1) interval, representing probabilities.​
+
+Sigmoid Function Formula:
+σ(z)= 1/ 1+e^-z
+​
+Where:
+
+𝑧= 𝛽0+𝛽1𝑥1+𝛽2𝑥2+⋯
+
+β0 is the intercept.
+
+𝛽1,𝛽2,…,𝛽𝑛 are coefficients for predictors 𝑥1,𝑥2,..,𝑥𝑛
+
+Decision Boundary: The model predicts class 1 if the output probability is above a certain threshold (commonly 0.5); otherwise, it predicts class 0. This threshold creates a decision boundary separating the two classes.​
+
+Model Training: It estimates the coefficients (𝛽) by maximizing the likelihood function, a method known as Maximum Likelihood Estimation (MLE). This approach finds the parameters that make the observed data most probable.
+
+
